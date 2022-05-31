@@ -5,11 +5,58 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Figuras geometricas</title>
+    <style>
+        input {
+            display: block;
+            margin: 10px 0px;
+        }
+    </style>
 </head>
 <body>
     <h1>
         Figuras geométricas
     </h1>
+    <p>Primer taller del curso de Práctico de JavaScript</p>
+    <!-- Formularios Cuadrado -->
+    <form action="">
+        <label for="InputCuadrado">
+            Escribe cuanto mide cada lado de tu cuadrado:
+        </label>
+        <!-- Aqui va el valor -->
+        <input type="number" id="InputCuadrado" />
+        <!-- Botones -->
+        <button type="button" onclick="calcularPerimetroCuadrado()" >
+            Calcular el perimetro
+        </button>
+        <button type="submit" onclick="calcularAreaCuadrado()">
+            Calcular el área
+        </button>
+    </form>
+    <!-- Formularios -->
+    <h2>Triángulo isósceles</h2>
+    <form action="">
+        <label for="InputLadoUno">
+            Ingresa el lado 1 del Triángulo isósceles:
+        </label>
+        <!-- Aqui va el valor -->
+        <input type="number" id="InputLadoUno"/>
+        <label for="InputLadoDos">
+            Ingresa el lado 2 del Triángulo isósceles:
+        </label>
+        <!-- Aqui va el valor -->
+        <input type="number" id="InputLadoDos"/>
+        <label for="InputLadoBase">
+            Ingresa el lado de la base del Triángulo isósceles:
+        </label>
+        <!-- Aqui va el valor -->
+        <input type="number" id="InputLadoBase"/>
+        <!-- Botones -->
+        <button type="button" onclick="calcularAlturaTtriangulo()" >
+            Calcular la altura
+        </button>
+    </form>
+
+    <!-- Enlaza JavaScript -->
     <script src="figuras.js">
 
     </script>
