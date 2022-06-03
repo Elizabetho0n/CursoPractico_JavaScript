@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cupones</title>
+    <style>
+        html {
+            font-size: 62.5%;
+        }
+        label {
+            display: block;
+            margin: 10px 0;
+            font-size: 1.5rem;
+        }
+        button {
+            display: block;
+            padding: 5px;
+            margin: 15px 0;
+            background-color: aquamarine;
+            border-radius: none;
+        }
+        .title {
+            font-size: 2rem;
+            font-weight: 700;
+        }
+    </style>
+</head>
+<body>
+    <h1>Cupones con descuento</h1>
+    <!-- Versión 1 -->
+    <p class="title">Versión 1</p>
+    <form action="">
+        <!-- Ingresa valor -->
+        <label for="precioIngresado">Ingrese el precio del producto:</label>
+        <input type="number" id="precioIngresado">
+        <!-- Slección de Cupones -->
+        <label for="">Seleccione su cupón:</label>
+        <select name="" id="valorCupon">
+            <option value="">Seleccione</option>
+            <option value="15">15%</option>
+            <option value="30">30%</option>
+            <option value="45">45%</option>
+            <option value="50">50%</option>
+            <option value="75">75%</option>
+        </select>
+        <!-- Botón enviar -->
+        <button type="button" onclick="precioFinalCupones()">
+            Calcular precio final
+        </button>
+        <!-- Mostrar precio Final -->
+        <p id="mostrarPrecio"></p>
+    </form>
+
+    <!-- Versión 2 -->
+    <p class="title">Versión 2</p>
+    <form action="">
+        <!-- Ingresa valor -->
+        <label for="precioIngresado1">Ingrese el precio del producto:</label>
+        <input type="number" id="precioIngresado1">
+        <!-- Ingresa el Cupones -->
+        <label for="nombreCupon">Ingrese el nombre de su cupón:</label>
+        <input type="text" id="nombreCupon">
+        <!-- Botón enviar -->
+        <button type="button" onclick="calcularPrecioFinal()">
+            Calcular precio final
+        </button>
+        <!-- Mostrar precio Final -->
+        <p id="mostrarPrecioFinal"></p>
+    </form>
+    <script src="./cupones.js"></script>
+</body>
+</html>
