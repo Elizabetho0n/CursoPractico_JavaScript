@@ -11,16 +11,14 @@
 
 //Acumulador o total
 //Current o valorActual
-const numbers = [
-    {name: "Juan", motivacion: "viajar", salario: 500},
-    {name: "Martha", motivacion: "viajar", salario: 500}
-];
-const sumaElementos =  numbers.reduce(function(Accumulador, current){
-    console.log(Accumulador, current.salario)
-    return Accumulador + current.salario    
-}, 0);
+const listaNumbers = [100,200,300,400,500];
+const sumaTotal =  listaNumbers.reduce(function(valorAnterior = 0, valorActual){
+    console.log(valorAnterior, valorActual)
+    return valorAnterior + valorActual;    
+});
 
-console.log(sumaElementos)
+console.log(sumaTotal)
+
 
 
 
