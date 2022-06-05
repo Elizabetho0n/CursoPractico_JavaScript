@@ -15,6 +15,18 @@ function calcularPromedio(lista) {
 
 let mediana;
 function calcularMediana(lista) {
+    lista.sort(
+        function(a,b) {
+            if (a < b) {
+                return -1;
+            }
+            if (a > b) {
+                return 1;
+            }
+            return 0;
+        }
+    );
+    console.log(lista)
     const mitadLista = parseInt(lista.length / 2);
     
     function esPar(valor){
@@ -37,8 +49,7 @@ function calcularMediana(lista) {
         console.log(mediana)
     }
 }
-console.log(calcularMediana([500, 400, 500]))
-
+console.log(calcularMediana([500, 400, 500, 600]))
 
 
 
