@@ -40,4 +40,17 @@ function calcularMediana(lista) {
     }
 };
 
-console.log(calcularMediana(salariosColSorted));
+// Vamos a crear una variable para guardar la formula general del calculo de la mediana. Recuerda que además trabajamos con una lista ordenada por eso usamos sort().
+//Metodo slice y splice:
+// formula promedio → (valor * (100 - %))/100 
+
+const sliceStart = parseInt((salariosColSorted.length * (100 - 10))/100);
+const sliceEnd = salariosColSorted.length;
+const salariosDelTop10 = salariosColSorted.slice(sliceStart, sliceEnd);
+ 
+
+const medianaGeneral = calcularMediana(salariosColSorted);
+const medianaDelTop10 = calcularMediana(salariosDelTop10);
+
+console.log (medianaGeneral, medianaDelTop10);
+
