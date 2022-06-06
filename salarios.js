@@ -1,3 +1,5 @@
+//El export se coloca al final
+
 const colombia = [];
 colombia.push({
   name: "Camila",
@@ -80,4 +82,7 @@ colombia.push({
   salary: 100000000,
 });
 
-console.log(colombia)
+//El export se coloca al final
+export {colombia};
+
+
